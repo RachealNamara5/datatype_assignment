@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Input Logging</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: peachpuff;
+        }
+    </style>
+  <label for="input">Type Something:</label>
+  <input type="text" id="input" oninput="logValue(this.value)">
+  <script>
+    function logValue(value) {
+      console.log(value);
+    }
+  </script>
+</body>
+</html>

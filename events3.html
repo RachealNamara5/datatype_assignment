@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Color on Mouseover</title>
+  <style>
+    .highlight {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="myDiv" onmouseover="changeColor()" onmouseout="changeColor()">
+    Move your mouse over this div to see it turn red.
+  </div>
+  <script>
+    function changeColor() {
+      const div = document.getElementById("myDiv");
+      div.classList.toggle("highlight");
+    }
+  </script>
+</body>
+</html>
